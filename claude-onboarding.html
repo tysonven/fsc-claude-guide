@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MF6PWWJK');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Claude Setup Guide for Health & Wellness Business Owners | Flow States Collective</title>
+<meta name="description" content="Set up Claude AI the right way for your health or wellness business. Step-by-step guide covering custom instructions, projects, power prompts and automations. Free from Flow States Collective.">
+<meta name="keywords" content="Claude AI for business, AI for health coaches, AI for wellness entrepreneurs, Claude setup guide, health business automation, Flow States Collective">
+<meta name="author" content="Flow States Collective">
+<link rel="canonical" href="https://claude.flowstatescollective.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://claude.flowstatescollective.com/">
+<meta property="og:title" content="Free Claude Setup Guide for Health & Wellness Business Owners">
+<meta property="og:description" content="Set up Claude AI the right way for your health or wellness business. Get custom instructions, project templates, 20 power prompts and workflow automations — free from Flow States Collective.">
+<meta property="og:image" content="https://claude.flowstatescollective.com/og-image.png">
+<meta property="og:site_name" content="Flow States Collective">
+<meta property="og:locale" content="en_AU">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://claude.flowstatescollective.com/">
+<meta name="twitter:title" content="Free Claude Setup Guide for Health & Wellness Business Owners">
+<meta name="twitter:description" content="Set up Claude AI the right way for your health or wellness business. 7 steps, 20 prompts, free from Flow States Collective.">
+<meta name="twitter:image" content="https://claude.flowstatescollective.com/og-image.png">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Set Up Claude AI for Your Health & Wellness Business",
+  "description": "A step-by-step guide to setting up Claude AI optimally for health and wellness business owners, covering account setup, custom instructions, projects, power prompts, workflows and integrations.",
+  "url": "https://claude.flowstatescollective.com/",
+  "author": {
+    "@type": "Organization",
+    "name": "Flow States Collective",
+    "url": "https://www.flowstatescollective.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Flow States Collective",
+    "url": "https://www.flowstatescollective.com"
+  },
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Create Your Claude Account", "text": "Sign up at claude.ai and choose the right plan for your business." },
+    { "@type": "HowToStep", "position": 2, "name": "Set Up Custom Instructions", "text": "Configure Claude with your business context so every response feels on-brand." },
+    { "@type": "HowToStep", "position": 3, "name": "Create Projects", "text": "Organise Claude into focused workspaces for proposals, content, systems and research." },
+    { "@type": "HowToStep", "position": 4, "name": "Use Power Prompts", "text": "Copy and use 20 ready-made prompts built for health and wellness founders." },
+    { "@type": "HowToStep", "position": 5, "name": "Build Daily Workflows", "text": "Set up morning routines and weekly automations to save hours every week." },
+    { "@type": "HowToStep", "position": 6, "name": "Connect Your Tools", "text": "Integrate Claude with Gmail, Google Drive, Notion, Slack and Zapier." }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5F2EE;
+    --warm-white: #FAFAF7;
+    --amber: #4A7C6F;
+    --amber-light: #6A9E91;
+    --amber-pale: #DDE9E6;
+    --navy: #1A1A18;
+    --navy-mid: #2E2E2C;
+    --sage: #7A9E8E;
+    --sage-light: #EAF0EE;
+    --coral: #3A6358;
+    --gold: #C4A882;
+    --text: #1A1A18;
+    --text-muted: #6B6866;
+    --border: #DDD9D3;
+    --shadow: 0 4px 24px rgba(26,26,24,0.07);
+    --shadow-lg: 0 12px 48px rgba(26,26,24,0.13);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* BACKGROUND TEXTURE */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 10% 20%, rgba(232,135,74,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 80%, rgba(92,122,107,0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(201,147,58,0.03) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .app {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
+
+  /* TOP BAR */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 4px;
+  }
+
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+
+  .logo span {
+    color: var(--amber);
+  }
+
+  .step-counter {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* PROGRESS BAR */
+  .progress-wrap {
+    margin-bottom: 40px;
+  }
+
+  .progress-track {
+    height: 4px;
+    background: var(--border);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--amber), var(--gold));
+    border-radius: 99px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .prog-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+
+  .prog-dot.active {
+    background: var(--amber);
+    transform: scale(1.4);
+  }
+
+  .prog-dot.done {
+    background: var(--gold);
+  }
+
+  /* SCREEN */
+  .screen {
+    display: none;
+    animation: fadeUp 0.4s ease forwards;
+  }
+
+  .screen.active {
+    display: block;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* HERO SCREEN */
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--amber-pale);
+    color: var(--amber);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 99px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--amber);
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    max-width: 560px;
+  }
+
+  .hero-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .hero-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+  }
+
+  .hero-card .icon {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-card .label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .hero-card .desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* SECTION CARD */
+  .card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+
+  .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .card-sub {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .step-header {
+    margin-bottom: 28px;
+  }
+
+  .step-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--amber);
+    background: var(--amber-pale);
+    padding: 3px 10px;
+    border-radius: 99px;
+    margin-bottom: 10px;
+  }
+
+  .step-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .step-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* CHECKLIST */
+  .checklist {
+    list-style: none;
+  }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+    border-radius: 8px;
+    padding: 14px 10px;
+    margin: 2px -10px;
+  }
+
+  .check-item:last-child {
+    border-bottom: none;
+  }
+
+  .check-item:hover {
+    background: var(--amber-pale);
+  }
+
+  .checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    background: white;
+  }
+
+  .check-item.checked .checkbox {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: white;
+  }
+
+  .check-item.checked .checkbox::after {
+    content: '✓';
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .check-item.checked .check-text {
+    text-decoration: line-through;
+    color: var(--text-muted);
+  }
+
+  .check-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--text);
+  }
+
+  .check-text strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .check-text span {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+
+  /* PLAN CARDS */
+  .plan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 480px) {
+    .plan-grid { grid-template-columns: 1fr; }
+    .cta-grid { grid-template-columns: 1fr !important; }
+  }
+
+  .plan-card {
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    background: white;
+    transition: border-color 0.2s;
+    cursor: pointer;
+  }
+
+  .plan-card.recommended {
+    border-color: var(--amber);
+    background: linear-gradient(135deg, #FFFCF7, #FEF3E8);
+  }
+
+  .plan-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .plan-card.recommended .plan-label {
+    color: var(--amber);
+  }
+
+  .plan-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .plan-price {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .plan-card.recommended .plan-price {
+    color: var(--amber);
+  }
+
+  .plan-features {
+    list-style: none;
+    font-size: 0.83rem;
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .plan-features li::before {
+    content: '→ ';
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  /* PROMPT BOXES */
+  .prompt-box {
+    background: var(--navy);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .prompt-box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .prompt-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--amber-light);
+    margin-bottom: 8px;
+  }
+
+  .prompt-text {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .copy-btn:hover {
+    background: rgba(255,255,255,0.2);
+  }
+
+  .copy-btn.copied {
+    background: var(--sage);
+    color: white;
+  }
+
+  /* INFO BOX */
+  .info-box {
+    background: var(--sage-light);
+    border-left: 3px solid var(--sage);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+  }
+
+  .info-box .title {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--sage);
+    margin-bottom: 4px;
+  }
+
+  .info-box p {
+    font-size: 0.85rem;
+    color: var(--text);
+    line-height: 1.55;
+  }
+
+  .amber-box {
+    background: var(--amber-pale);
+    border-left-color: var(--amber);
+  }
+
+  .amber-box .title {
+    color: var(--amber);
+  }
+
+  /* INSTRUCTION TEMPLATE */
+  .instruction-template {
+    background: var(--cream);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 14px;
+    white-space: pre-line;
+    position: relative;
+  }
+
+  .instruction-template .field {
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  /* WORKFLOW ITEMS */
+  .workflow-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .workflow-row:last-child {
+    border-bottom: none;
+  }
+
+  .wf-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--amber-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .wf-title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--navy);
+    margin-bottom: 3px;
+  }
+
+  .wf-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* COMPLETION */
+  .completion-hero {
+    text-align: center;
+    padding: 20px 0 32px;
+  }
+
+  .confetti {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+
+  .completion-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  .completion-sub {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto 28px;
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .summary-item {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .summary-icon {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .summary-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  /* BUTTONS */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--amber);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 16px rgba(232,135,74,0.35);
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    background: var(--coral);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(232,135,74,0.4);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--amber);
+    color: var(--amber);
+  }
+
+  .nav-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+
+  .nav-row .spacer {
+    flex: 1;
+  }
+
+  /* LINK */
+  .ext-link {
+    color: var(--amber);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--amber-pale);
+    transition: border-color 0.2s;
+  }
+
+  .ext-link:hover {
+    border-color: var(--amber);
+  }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 20px 0;
+  }
+
+  /* PROJECT IDEAS */
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 480px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+
+  .project-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    background: white;
+    transition: border-color 0.2s, transform 0.15s;
+    cursor: default;
+  }
+
+  .project-card:hover {
+    border-color: var(--amber);
+    transform: translateY(-2px);
+  }
+
+  .project-icon {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  .project-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--navy);
+    margin-bottom: 3px;
+  }
+
+  .project-hint {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  /* Scroll to top on screen change handled by JS */
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF6PWWJK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="app">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="logo">Flow States <span>Collective</span></div>
+    <div class="step-counter" id="stepCounter">Getting Started</div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-wrap" id="progressWrap" style="display:none">
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="progress-steps" id="progressDots"></div>
+  </div>
+
+  <!-- SCREEN 0: WELCOME -->
+  <div class="screen active" id="screen-0">
+    <div class="hero-badge">✦ Claude Setup Guide for Health & Wellness Founders</div>
+    <h1 class="hero-title">Get Claude <em>working for</em><br>your business in 30 mins</h1>
+    <p class="hero-sub">This guide is brought to you by Flow States Collective. We'll walk you through setting up Claude properly — not just creating an account, but configuring it so it becomes a genuine second brain for your coaching practice, clinic, or wellness business.</p>
+
+    <div class="hero-cards">
+      <div class="hero-card">
+        <div class="icon">💬</div>
+        <div class="label">Client Comms</div>
+        <div class="desc">Proposals, follow-ups & onboarding emails in minutes</div>
+      </div>
+      <div class="hero-card">
+        <div class="icon">🧠</div>
+        <div class="label">Research & Strategy</div>
+        <div class="desc">Competitor analysis, market research & business planning</div>
+      </div>
+      <div class="hero-card">
+        <div class="icon">⚙️</div>
+        <div class="label">Systems & Processes</div>
+        <div class="desc">SOPs, workflows & automations to scale your time</div>
+      </div>
+      <div class="hero-card">
+        <div class="icon">✍️</div>
+        <div class="label">Content Creation</div>
+        <div class="desc">Newsletters, social posts & blog content — fast</div>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-primary" onclick="goTo(1)">Let's get started →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 1: CREATE YOUR ACCOUNT -->
+  <div class="screen" id="screen-1">
+    <div class="step-header">
+      <div class="step-tag">Step 1 of 7</div>
+      <h2 class="step-title">Create your Claude account</h2>
+      <p class="step-desc">Head to <a href="https://claude.ai" target="_blank" class="ext-link">claude.ai</a> and sign up. Tick each step off as you go.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Account setup checklist</div>
+      <div class="card-sub">Check each item as you complete it</div>
+      <ul class="checklist" id="checklist-1">
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Visit claude.ai in your browser</strong><span>Works on Chrome, Safari, Firefox — or download the mobile app</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Sign up with Google or email</strong><span>Google sign-in is quickest if you use Google Workspace for your business</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Verify your email address</strong><span>Check your inbox — it arrives within 2 minutes</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Accept the terms and complete your profile</strong><span>Just your name and basic info — takes 30 seconds</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Free vs Pro — which is right for you?</div>
+      <div class="card-sub">For business owners and coaches, Pro is a clear yes. Here's why:</div>
+      <div class="plan-grid">
+        <div class="plan-card">
+          <div class="plan-label">Basic</div>
+          <div class="plan-name">Free</div>
+          <div class="plan-price">$0 / month</div>
+          <ul class="plan-features">
+            <li>Limited messages per day</li>
+            <li>Access to Claude Sonnet</li>
+            <li>No Projects feature</li>
+            <li>Good for trying it out</li>
+          </ul>
+        </div>
+        <div class="plan-card recommended">
+          <div class="plan-label">⭐ Recommended</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">~$20 / month</div>
+          <ul class="plan-features">
+            <li>5× more usage</li>
+            <li>Access to all models</li>
+            <li>Projects (game changer!)</li>
+            <li>File uploads & memory</li>
+            <li>Priority access</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-box amber-box" style="margin-top:12px">
+        <div class="title">💡 Our recommendation</div>
+        <p>At $20/month, Pro pays for itself the first time you use it to write a client proposal or create a month of content. Start with Pro.</p>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-secondary" onclick="goTo(0)">← Back</button>
+      <div class="spacer"></div>
+      <button class="btn-primary" onclick="goTo(2)">Next: Custom Instructions →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: CUSTOM INSTRUCTIONS -->
+  <div class="screen" id="screen-2">
+    <div class="step-header">
+      <div class="step-tag">Step 2 of 7</div>
+      <h2 class="step-title">Tell Claude who you are</h2>
+      <p class="step-desc">Custom instructions are the single most powerful thing you can set up. They mean Claude always knows your business, your voice, and how you want to work — without you having to explain yourself every time.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">How to set it up</div>
+      <div class="card-sub">It takes 5 minutes and saves you hours</div>
+      <ul class="checklist">
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Click your profile icon (top right) → Settings</strong><span>Then go to "Profile" in the left menu</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Fill in "What would you like Claude to know about you?"</strong><span>Use the template below as your starting point</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Fill in "How would you like Claude to respond?"</strong><span>Tell it your preferred tone, format, and level of detail</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Your starter template</div>
+      <div class="card-sub">Copy this and fill in the highlighted fields — make it yours</div>
+
+      <div class="instruction-template">I run a <span class="field">[your business type, e.g. "business coaching practice / marketing consultancy / virtual assistant agency"]</span> called <span class="field">[Business Name]</span>. I work with <span class="field">[your ideal client, e.g. "small business owners in the retail sector"]</span>.
+
+My main services are: <span class="field">[list 2–3 services]</span>
+
+My tone of voice is: <span class="field">[e.g. "warm, direct, and practical — not corporate or overly formal"]</span>
+
+Key things to know:
+- I'm based in <span class="field">[location]</span>
+- I prefer <span class="field">[bullet points / prose / short answers]</span>
+- When writing for clients, always match my tone: <span class="field">[friendly/professional/conversational]</span>
+- I use <span class="field">[any tools, e.g. Notion, Google Workspace, HubSpot]</span> in my business</div>
+
+      <button class="copy-btn" style="position:relative;top:auto;right:auto;display:inline-block;margin-top:0;background:var(--amber);padding:8px 16px;border-radius:8px;font-size:0.82rem;" onclick="copyTemplate()">📋 Copy template</button>
+    </div>
+
+    <div class="info-box">
+      <div class="title">✅ What good looks like</div>
+      <p>The more specific you are, the better Claude performs. "I'm a coach" is OK. "I'm a life coach for women returning to work after a career break, and I communicate warmly but professionally" is gold.</p>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-secondary" onclick="goTo(1)">← Back</button>
+      <div class="spacer"></div>
+      <button class="btn-primary" onclick="goTo(3)">Next: Set Up Projects →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: PROJECTS -->
+  <div class="screen" id="screen-3">
+    <div class="step-header">
+      <div class="step-tag">Step 3 of 7</div>
+      <h2 class="step-title">Set up your first Projects</h2>
+      <p class="step-desc">Projects are like dedicated workspaces inside Claude — each one remembers context, holds your files, and keeps work organised. Think of them as hiring different "versions" of Claude for different jobs.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">How Projects work</div>
+      <div class="card-sub">From the sidebar, click "New Project" to create one</div>
+      <ul class="checklist">
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Click "+ New Project" in the left sidebar</strong><span>Give it a clear name so you know exactly what it's for</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Add a Project instruction (custom prompt for this workspace)</strong><span>e.g. "This project is for writing client proposals. Always use formal language and include a pricing section."</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Upload any relevant files</strong><span>e.g. your services brochure, brand guide, or a previous proposal as a template</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Projects to create for your business</div>
+      <div class="card-sub">Start with 2–3, you can always add more</div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-icon">📋</div>
+          <div class="project-name">Client Proposals & Comms</div>
+          <div class="project-hint">Upload your services doc, pricing, and a past proposal. Claude will match your format every time.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">✍️</div>
+          <div class="project-name">Content Creation</div>
+          <div class="project-hint">Upload your brand voice guide or 3 pieces of your best existing content so Claude learns your style.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">⚙️</div>
+          <div class="project-name">Systems & Operations</div>
+          <div class="project-hint">For writing SOPs, process docs, onboarding templates and anything that runs your business.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🔍</div>
+          <div class="project-name">Research & Strategy</div>
+          <div class="project-hint">Deep dives, competitor research, market analysis and business planning all in one place.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box amber-box">
+      <div class="title">⚡ Pro tip</div>
+      <p>The magic happens when you upload a file. Add your services list to the proposals project and Claude will automatically reference your actual offers, prices, and language — no copy-pasting needed.</p>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-secondary" onclick="goTo(2)">← Back</button>
+      <div class="spacer"></div>
+      <button class="btn-primary" onclick="showCapture()">Next: Power Prompts →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 4: POWER PROMPTS -->
+  <div class="screen" id="screen-4">
+    <div class="step-header">
+      <div class="step-tag">Step 4 of 7</div>
+      <h2 class="step-title">Your business prompt toolkit</h2>
+      <p class="step-desc">These are ready-to-use prompts tailored for coaches, consultants, and small business owners. Click any box to copy it — then paste straight into Claude.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Client Communication</div>
+      <div class="card-sub">Save hours on proposals, follow-ups, and onboarding</div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">📄 Proposal Writer</div>
+        <div class="prompt-text">Write a professional proposal for a new client. The client is [name/type], their problem is [brief description], and I'm proposing [service/solution]. Include an overview, what's included, timeline, and a section for investment/pricing. Match my business tone.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">📧 Follow-Up Email</div>
+        <div class="prompt-text">Write a warm follow-up email to a prospective client I met [time period] ago. We discussed [topic]. I want to check in, add value by sharing [brief insight or resource], and invite them to book a call. Keep it short — under 120 words.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Content Creation</div>
+      <div class="card-sub">Posts, newsletters, and ideas — on demand</div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">📱 LinkedIn Post</div>
+        <div class="prompt-text">Write a LinkedIn post about [topic/lesson/story from my business]. The post should feel personal and genuine, start with a hook line that stops the scroll, share a real insight, and end with a question or soft call to action. 150–200 words. My tone is [warm/direct/etc].</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">📰 Newsletter Section</div>
+        <div class="prompt-text">Write a 200-word section for my email newsletter on the topic of [subject]. It should feel like I'm talking directly to my reader ([target client description]), be practical and specific, and end with one clear action they can take this week.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Systems & Operations</div>
+      <div class="card-sub">Build the processes that run your business</div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">⚙️ SOP Creator</div>
+        <div class="prompt-text">Create a step-by-step Standard Operating Procedure (SOP) for [task, e.g. "onboarding a new client"]. Include: overview, who is responsible, step-by-step instructions, any tools or templates needed, and what success looks like. Format it so a new team member could follow it.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">🔍 Strategy Researcher</div>
+        <div class="prompt-text">I need a competitive analysis for my business. I offer [your services] to [your audience]. My main competitors appear to be [list 2–3 if you know them]. Analyse what they offer, how they position themselves, and identify 3 gaps or opportunities I could take advantage of.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-secondary" onclick="goTo(3)">← Back</button>
+      <div class="spacer"></div>
+      <button class="btn-primary" onclick="goTo(5)">Next: Daily Workflows →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 5: DAILY WORKFLOWS -->
+  <div class="screen" id="screen-5">
+    <div class="step-header">
+      <div class="step-tag">Step 5 of 7</div>
+      <h2 class="step-title">Build Claude into your day</h2>
+      <p class="step-desc">The business owners who get the most from Claude use it little and often — not just for big tasks. Here's how to weave it into your daily and weekly rhythm.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Morning workflow (10 mins)</div>
+      <div class="card-sub">Start each day with clarity</div>
+      <div class="workflow-row">
+        <div class="wf-icon">📬</div>
+        <div>
+          <div class="wf-title">Triage your inbox with Claude</div>
+          <div class="wf-desc">Paste tricky emails in and ask "How should I respond to this?" or "Draft a professional reply that says X."</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">📋</div>
+        <div>
+          <div class="wf-title">Plan your day</div>
+          <div class="wf-desc">Share your task list and ask Claude to help you prioritise, break down complex tasks, or spot anything you've missed.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Weekly tasks to automate</div>
+      <div class="card-sub">Things you can stop doing manually</div>
+      <div class="workflow-row">
+        <div class="wf-icon">✍️</div>
+        <div>
+          <div class="wf-title">Content batch day</div>
+          <div class="wf-desc">Set aside 1 hour per week. Give Claude your content themes and let it draft 5–7 social posts, a newsletter intro, and 2 email ideas in one go.</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">📊</div>
+        <div>
+          <div class="wf-title">Weekly review & planning</div>
+          <div class="wf-desc">Paste your notes from the week and ask Claude to summarise key wins, blockers, and help you draft next week's priorities.</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">💼</div>
+        <div>
+          <div class="wf-title">Client prep</div>
+          <div class="wf-desc">Before any client call, paste in their brief or past notes. Ask Claude to generate smart questions, a session outline, or key points to cover.</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">📁</div>
+        <div>
+          <div class="wf-title">Meeting notes → action items</div>
+          <div class="wf-desc">After a meeting, paste your rough notes and ask Claude to clean them up, pull out action items, and draft any follow-up emails needed.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="title">🚀 Level up: Claude in your other tools</div>
+      <p>Claude also works inside Chrome (as a browsing assistant), Google Sheets, PowerPoint, and via integrations with Slack and Zapier. Check claude.ai/integrations once you're comfortable with the basics.</p>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-secondary" onclick="goTo(4)">← Back</button>
+      <div class="spacer"></div>
+      <button class="btn-primary" onclick="goTo(6)">Next: Integrations →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 6: INTEGRATIONS -->
+  <div class="screen" id="screen-6">
+    <div class="step-header">
+      <div class="step-tag">Step 6 of 7</div>
+      <h2 class="step-title">Connect Claude to your tools</h2>
+      <p class="step-desc">This is where Claude stops being a chatbot and starts running parts of your business. Connectors link Claude directly to the apps you already use — so it can read your emails, update your calendar, search your files, and take actions without you switching tabs.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">How to connect your first app</div>
+      <div class="card-sub">Takes less than 2 minutes per connector</div>
+      <ul class="checklist">
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Click the "+" button in the bottom-left of any chat</strong><span>Or type "/" to open the quick menu</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Click "Connectors" to browse the directory</strong><span>50+ apps available — from Gmail to Notion to Zapier</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Click "Connect" next to your chosen tool</strong><span>Claude redirects you to sign in — you approve exactly what it can access</span></div>
+        </li>
+        <li class="check-item" onclick="toggleCheck(this)">
+          <div class="checkbox"></div>
+          <div class="check-text"><strong>Test it with a simple request</strong><span>e.g. "Show me my latest Gmail messages" or "List my Notion pages from this week"</span></div>
+        </li>
+      </ul>
+      <div class="info-box" style="margin-top:14px">
+        <div class="title">🔒 Is it safe?</div>
+        <p>Yes — Claude uses secure OAuth authentication. You always see exactly what Claude can access before approving, and you can disconnect any app at any time from Settings → Connectors.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Essential connectors for your business</div>
+      <div class="card-sub">Start with whichever tools you use most — connect one at a time</div>
+
+      <div class="workflow-row">
+        <div class="wf-icon">📧</div>
+        <div>
+          <div class="wf-title">Gmail + Google Calendar</div>
+          <div class="wf-desc">Claude can search emails, summarise threads, draft replies, and check your calendar — all in one conversation. Ask: "Find all emails from [client] this month and summarise what they've asked for."</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">📁</div>
+        <div>
+          <div class="wf-title">Google Drive</div>
+          <div class="wf-desc">Access, search, and work with your actual docs and files. Ask: "Find my Q4 proposal template in Drive and update it for a new client in the retail sector."</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">📓</div>
+        <div>
+          <div class="wf-title">Notion</div>
+          <div class="wf-desc">Read and write to your Notion workspace. Ask: "Look at my client notes in Notion and draft a session agenda for tomorrow's call."</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">💬</div>
+        <div>
+          <div class="wf-title">Slack</div>
+          <div class="wf-desc">Draft messages, summarise busy channels, and catch up on threads you missed. Ask: "Summarise the #clients channel from the last 2 days and flag anything urgent."</div>
+        </div>
+      </div>
+      <div class="workflow-row">
+        <div class="wf-icon">⚡</div>
+        <div>
+          <div class="wf-title">Zapier <span style="font-size:0.75rem;color:var(--amber);font-weight:600;margin-left:4px">POWER MOVE</span></div>
+          <div class="wf-desc">Connects Claude to 8,000+ apps. If there's no direct connector for a tool you use, Zapier bridges the gap. Build automations like: "When a new form is submitted → Claude writes a personalised reply → sends via Gmail."</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">5 workflows you can run today</div>
+      <div class="card-sub">Once your connectors are live, try these power combos</div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)" style="margin-bottom:10px">
+        <div class="prompt-label">🌅 Morning Briefing (Gmail + Calendar)</div>
+        <div class="prompt-text">Check my Gmail for anything urgent from the last 24 hours, then look at my calendar for today and tomorrow. Give me a summary of what needs my attention and suggest how to prioritise my morning.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)" style="margin-bottom:10px">
+        <div class="prompt-label">📋 Client Prep (Notion + Calendar)</div>
+        <div class="prompt-text">I have a call with [client name] at [time]. Find my notes about them in Notion, review what we last discussed, and create a short session agenda with 3 smart questions I should ask.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)" style="margin-bottom:10px">
+        <div class="prompt-label">✉️ Inbox Zero Helper (Gmail)</div>
+        <div class="prompt-text">Go through my last 20 unread emails. For each one, tell me: what it's about, whether it needs a reply, and if yes — draft a short response I can approve and send.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)" style="margin-bottom:10px">
+        <div class="prompt-label">📊 Weekly Review (Notion + Gmail)</div>
+        <div class="prompt-text">Look at my notes in Notion and any key emails from this week. Summarise: what I accomplished, what's still open, and help me write a clear plan for next week.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+
+      <div class="prompt-box" onclick="copyPrompt(this)">
+        <div class="prompt-label">🗂️ Meeting Notes → Actions (Google Drive)</div>
+        <div class="prompt-text">I've just finished a meeting. Here are my rough notes: [paste notes]. Clean these up, extract all action items with owners and deadlines, and save a tidy version to my Google Drive in the [folder name] folder.</div>
+        <button class="copy-btn">Copy</button>
+      </div>
+    </div>
+
+    <div class="info-box amber-box">
+      <div class="title">💡 Note on connectors</div>
+      <p>Connectors are available on Pro, Max, Team, and Enterprise plans. Desktop-only connectors (for controlling apps on your computer) require the Claude desktop app. Web connectors work in your browser straightaway.</p>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn-secondary" onclick="goTo(5)">← Back</button>
+      <div class="spacer"></div>
+      <button class="btn-primary" onclick="goTo(7)">Final Step →</button>
+    </div>
+  </div>
+
+  <div class="screen" id="screen-7">
+    <div class="completion-hero">
+      <div class="confetti">🎉</div>
+      <h2 class="completion-title">You're all set up!</h2>
+      <p class="completion-sub">You now have everything you need to make Claude a genuine asset inside your wellness business — not just another tool you signed up for and forgot about.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Your setup checklist</div>
+      <div class="card-sub">Everything you've covered in this guide</div>
+      <div class="summary-grid">
+        <div class="summary-item"><div class="summary-icon">✅</div><div class="summary-label">Account created</div></div>
+        <div class="summary-item"><div class="summary-icon">✅</div><div class="summary-label">Custom instructions set</div></div>
+        <div class="summary-item"><div class="summary-icon">✅</div><div class="summary-label">Projects created</div></div>
+        <div class="summary-item"><div class="summary-icon">✅</div><div class="summary-label">Prompt toolkit ready</div></div>
+        <div class="summary-item"><div class="summary-icon">✅</div><div class="summary-label">Daily workflow planned</div></div>
+        <div class="summary-item"><div class="summary-icon">✅</div><div class="summary-label">Integrations connected</div></div>
+      </div>
+    </div>
+
+    <!-- FSC CTA CARD -->
+    <div class="card" style="background:var(--navy);border-color:transparent;overflow:hidden;position:relative;">
+      <div style="position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;background:rgba(196,168,130,0.08);pointer-events:none;"></div>
+      <div style="position:absolute;bottom:-30px;left:-30px;width:110px;height:110px;border-radius:50%;background:rgba(74,124,111,0.12);pointer-events:none;"></div>
+      <div style="position:relative;z-index:1;">
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Want to go deeper?</div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:1.4rem;font-weight:800;color:#fff;line-height:1.25;margin-bottom:12px;">Ready to get Claude <em style="font-style:italic;color:var(--gold);">turbocharged</em> for your business?</div>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.72);line-height:1.65;margin-bottom:24px;">This guide gives you the foundations — but working with us means we get your entire AI setup dialled in, your automations flowing, and your systems running so you can step into your CEO role for good.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;">
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:18px;">
+            <div style="font-size:1.3rem;margin-bottom:8px;">⚡</div>
+            <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;color:#fff;margin-bottom:5px;">Automate to Elevate</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.58);line-height:1.5;margin-bottom:14px;">A focused 1:1 strategy session to build your funnels, AI systems, and workflows — so your business runs on autopilot.</div>
+            <a href="https://go.flowstatescollective.com/strategy-sessions" target="_blank" style="display:inline-block;background:var(--gold);color:var(--navy);font-family:'Raleway',sans-serif;font-weight:700;font-size:0.8rem;padding:9px 14px;border-radius:8px;text-decoration:none;">Book Session →</a>
+          </div>
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:18px;">
+            <div style="font-size:1.3rem;margin-bottom:8px;">🤖</div>
+            <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;color:#fff;margin-bottom:5px;">AI PT Session</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.58);line-height:1.5;margin-bottom:14px;">Your personal AI training session — we'll build your prompt library, connect your tools, and get Claude working hard for your niche.</div>
+            <a href="https://go.flowstatescollective.com/strategy-sessions" target="_blank" style="display:inline-block;background:var(--amber);color:#fff;font-family:'Raleway',sans-serif;font-weight:700;font-size:0.8rem;padding:9px 14px;border-radius:8px;text-decoration:none;">Book Session →</a>
+          </div>
+        </div>
+        <p style="text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.38);font-style:italic;">Used by 100+ purpose-driven founders across Australia and beyond · Flow States Collective</p>
+      </div>
+    </div>
+
+    <div class="card" style="background:linear-gradient(135deg,var(--sage-light),var(--warm-white));border-color:var(--border);">
+      <div style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px;">💡 One last thing</div>
+      <p style="font-size:0.87rem;line-height:1.65;color:var(--text-muted);">The biggest mistake people make with Claude is treating it like a search engine. The magic happens when you <em>work with it</em> — share context, have a conversation, iterate on the output. Think of it like briefing a talented team member who never sleeps.</p>
+    </div>
+
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:8px 0 16px;">
+      <button class="btn-secondary" onclick="goTo(0)">← Start over</button>
+      <a href="https://claude.ai" target="_blank" class="btn-primary">Open Claude →</a>
+      <a href="https://flowstatescollective.com" target="_blank" class="btn-secondary">flowstatescollective.com</a>
+    </div>
+  </div>
+
+  <!-- ── EMAIL CAPTURE MODAL ── -->
+  <div id="captureOverlay" style="display:none;position:fixed;inset:0;z-index:100;background:rgba(26,26,24,0.6);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px;">
+    <div id="captureBox" style="background:var(--warm-white);border-radius:24px;max-width:480px;width:100%;box-shadow:0 24px 64px rgba(26,26,24,0.22);overflow:hidden;animation:fadeUp 0.35s ease forwards;">
+
+      <!-- top accent -->
+      <div style="background:var(--navy);padding:28px 28px 24px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(196,168,130,0.1);pointer-events:none;"></div>
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Free Download</div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:1.3rem;font-weight:800;color:#fff;line-height:1.25;margin-bottom:6px;">Get the full Prompt Toolkit PDF 🎁</div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.5;margin:0;">20 ready-to-use Claude prompts for health &amp; wellness founders — beautifully formatted to keep on your desk or share with your team.</p>
+      </div>
+
+      <!-- form -->
+      <div id="captureForm" style="padding:24px 28px 28px;">
+        <div style="margin-bottom:14px;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:var(--text);margin-bottom:5px;">Your first name</label>
+          <input id="captureName" type="text" placeholder="Emma" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:0.95rem;color:var(--text);background:white;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--amber)'" onblur="this.style.borderColor='var(--border)'">
+        </div>
+        <div style="margin-bottom:18px;">
+          <label style="display:block;font-size:0.8rem;font-weight:600;color:var(--text);margin-bottom:5px;">Your email address</label>
+          <input id="captureEmail" type="email" placeholder="hello@yourbusiness.com" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:0.95rem;color:var(--text);background:white;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--amber)'" onblur="this.style.borderColor='var(--border)'">
+        </div>
+        <div id="captureError" style="display:none;font-size:0.82rem;color:#c0392b;margin-bottom:12px;padding:8px 12px;background:#fdf0ef;border-radius:8px;"></div>
+        <button id="captureSubmitBtn" onclick="submitCapture()" class="btn-primary" style="width:100%;justify-content:center;">Send me the PDF →</button>
+        <button onclick="skipCapture()" style="width:100%;margin-top:10px;background:none;border:none;font-family:'Raleway',sans-serif;font-size:0.82rem;color:var(--text-muted);cursor:pointer;padding:6px;text-decoration:underline;">No thanks, skip this</button>
+      </div>
+
+      <!-- success state (hidden) -->
+      <div id="captureSuccess" style="display:none;padding:28px;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">🎉</div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.15rem;color:var(--navy);margin-bottom:8px;">Check your inbox!</div>
+        <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.6;margin-bottom:20px;">Your PDF is downloading now. We'll also drop some extra Claude tips in your inbox over the next few days. 🙌</p>
+        <button class="btn-primary" style="margin:0 auto;" onclick="proceedAfterCapture()">Continue the guide →</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // ── CONFIG — update these before going live ──────────────────────────────
+  const FLOW_OS_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/nOkx7DPm0kNgNMzNFRY5/webhook-trigger/67ab7b84-6675-4922-958f-ff8c703ad2ad';
+  // Replace above with your Flow OS / GHL webhook URL
+  // e.g. 'https://services.leadconnectorhq.com/hooks/XXXX/webhook-trigger/YYYY'
+  // ─────────────────────────────────────────────────────────────────────────
+
+  // PDF embedded as base64 (auto-downloads on form submit)
+
+  let captureCompleted = false;
+
+  // ── MODAL ──────────────────────────────────────────────────────────────────
+  function showCapture() {
+    if (captureCompleted) { goTo(4); return; }
+    const overlay = document.getElementById('captureOverlay');
+    overlay.style.display = 'flex';
+    setTimeout(() => document.getElementById('captureName').focus(), 300);
+  }
+
+  function skipCapture() {
+    document.getElementById('captureOverlay').style.display = 'none';
+    captureCompleted = true;
+    goTo(4);
+  }
+
+  function proceedAfterCapture() {
+    document.getElementById('captureOverlay').style.display = 'none';
+    goTo(4);
+  }
+
+  function submitCapture() {
+    const name  = document.getElementById('captureName').value.trim();
+    const email = document.getElementById('captureEmail').value.trim();
+    const errEl = document.getElementById('captureError');
+    const btn   = document.getElementById('captureSubmitBtn');
+
+    // Basic validation
+    if (!name) { showError('Please enter your first name'); return; }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showError('Please enter a valid email address'); return;
+    }
+
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    errEl.style.display = 'none';
+
+    // Fire PDF download immediately
+    downloadPDF();
+
+    // Fire webhook — no-cors so we can't read response, just fire and forget
+    fetch(FLOW_OS_WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
+      body: JSON.stringify({
+        first_name: name,
+        email: email,
+        source: 'Claude Setup Guide — FSC',
+        lead_magnet: 'Claude Business Prompt Toolkit PDF',
+        timestamp: new Date().toISOString()
+      })
+    }).catch(() => {}); // silently ignore any network errors
+
+    // Show success immediately — don't wait for webhook response
+    document.getElementById('captureForm').style.display = 'none';
+    document.getElementById('captureSuccess').style.display = 'block';
+    captureCompleted = true;
+  }
+
+  function showError(msg) {
+    const el = document.getElementById('captureError');
+    el.textContent = msg;
+    el.style.display = 'block';
+    document.getElementById('captureSubmitBtn').textContent = 'Send me the PDF →';
+    document.getElementById('captureSubmitBtn').disabled = false;
+  }
+
+  function downloadPDF() {
+    const link = document.createElement('a');
+    link.href = 'fsc-claude-prompt-toolkit.pdf';
+    link.download = 'FSC-Claude-Business-Prompt-Toolkit.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // ── NAVIGATION ─────────────────────────────────────────────────────────────
+  const totalSteps = 7;
+  let currentStep = 0;
+
+  const stepLabels = [
+    'Getting Started',
+    'Step 1 of 7 — Account',
+    'Step 2 of 7 — Instructions',
+    'Step 3 of 7 — Projects',
+    'Step 4 of 7 — Prompts',
+    'Step 5 of 7 — Workflows',
+    'Step 6 of 7 — Integrations',
+    'Step 7 of 7 — Complete'
+  ];
+
+  function goTo(step) {
+    document.getElementById('screen-' + currentStep).classList.remove('active');
+    currentStep = step;
+    document.getElementById('screen-' + currentStep).classList.add('active');
+    updateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function updateProgress() {
+    document.getElementById('stepCounter').textContent = stepLabels[currentStep];
+    const wrap = document.getElementById('progressWrap');
+    wrap.style.display = currentStep === 0 ? 'none' : 'block';
+    const pct = currentStep === 0 ? 0 : (currentStep / totalSteps) * 100;
+    document.getElementById('progressFill').style.width = pct + '%';
+    const dots = document.getElementById('progressDots');
+    dots.innerHTML = '';
+    for (let i = 1; i <= totalSteps; i++) {
+      const d = document.createElement('div');
+      d.className = 'prog-dot' + (i < currentStep ? ' done' : i === currentStep ? ' active' : '');
+      d.onclick = () => goTo(i);
+      dots.appendChild(d);
+    }
+  }
+
+  function toggleCheck(el) { el.classList.toggle('checked'); }
+
+  function copyPrompt(box) {
+    const text = box.querySelector('.prompt-text').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = box.querySelector('.copy-btn');
+      btn.textContent = '✓ Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+
+  function copyTemplate() {
+    const text = document.querySelector('.instruction-template').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Template copied! Paste it into Claude's Custom Instructions and fill in the highlighted fields.");
+    });
+  }
+
+  updateProgress();
+</script>
+</body>
+</html>
