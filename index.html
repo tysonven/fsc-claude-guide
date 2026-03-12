@@ -1398,8 +1398,8 @@ Key things to know:
           data-form-id="ApZkertsMOqlJlpPE5CA"
           title="Claude Lead Magnet"
         ></iframe>
-        <div id="captureActions" style="display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:8px;">
-          <button id="captureContBtn" onclick="proceedAfterCapture()" style="display:none;width:100%;padding:11px;background:var(--amber);color:#fff;border:none;border-radius:10px;font-family:'Raleway',sans-serif;font-size:0.92rem;font-weight:700;cursor:pointer;">Continue to Power Prompts →</button>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:10px;padding:0 4px;">
+          <button onclick="proceedAfterCapture()" class="btn-primary" style="width:100%;justify-content:center;">Done! Continue to Power Prompts →</button>
           <button onclick="skipCapture()" style="width:100%;background:none;border:none;font-family:'Raleway',sans-serif;font-size:0.82rem;color:var(--text-muted);cursor:pointer;padding:6px;text-decoration:underline;">No thanks, skip this</button>
         </div>
       </div>
@@ -1417,7 +1417,6 @@ Key things to know:
   function showCapture() {
     if (captureCompleted) { goTo(4); return; }
     document.getElementById('captureOverlay').style.display = 'flex';
-    startCaptureTimer();
   }
 
   function skipCapture() {
@@ -1433,10 +1432,7 @@ Key things to know:
     goTo(4);
   }
 
-  function showContinueBtn() {
-    var btn = document.getElementById('captureContBtn');
-    if (btn) btn.style.display = 'block';
-  }
+
 
   window.addEventListener('message', function(e) {
     // Catch all GHL form submission event variants
@@ -1456,7 +1452,6 @@ Key things to know:
       captureCompleted = true;
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'conversion - claude lead magnet' });
-      showContinueBtn();
       setTimeout(function() {
         document.getElementById('captureOverlay').style.display = 'none';
         goTo(4);
@@ -1464,11 +1459,7 @@ Key things to know:
     }
   });
 
-  // Fallback: show Continue button after 12s in case postMessage never fires
-  // (handles cases where GHL thank-you message shows but event doesn't reach parent)
-  function startCaptureTimer() {
-    setTimeout(showContinueBtn, 12000);
-  }
+
 
     // ── NAVIGATION ─────────────────────────────────────────────────────────────
   const totalSteps = 7;
