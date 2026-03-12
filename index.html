@@ -1398,9 +1398,8 @@ Key things to know:
           data-form-id="ApZkertsMOqlJlpPE5CA"
           title="Claude Lead Magnet"
         ></iframe>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:10px;padding:0 4px;">
-          <button onclick="proceedAfterCapture()" class="btn-primary" style="width:100%;justify-content:center;">Done! Continue to Power Prompts →</button>
-          <button onclick="skipCapture()" style="width:100%;background:none;border:none;font-family:'Raleway',sans-serif;font-size:0.82rem;color:var(--text-muted);cursor:pointer;padding:6px;text-decoration:underline;">No thanks, skip this</button>
+        <div style="text-align:center;margin-top:6px;padding:0 4px;">
+          <button onclick="skipCapture()" style="background:none;border:none;font-family:'Raleway',sans-serif;font-size:0.82rem;color:var(--text-muted);cursor:pointer;padding:6px;text-decoration:underline;">No thanks, skip this</button>
         </div>
       </div>
 
@@ -1415,7 +1414,7 @@ Key things to know:
 
   // ── MODAL ───────────────────────────────────────────────────────────────────────────
   function showCapture() {
-    if (captureCompleted) { goTo(4); return; }
+    if (captureCompleted || window.__skipCapture) { goTo(4); return; }
     document.getElementById('captureOverlay').style.display = 'flex';
   }
 
@@ -1464,6 +1463,22 @@ Key things to know:
     // ── NAVIGATION ─────────────────────────────────────────────────────────────
   const totalSteps = 7;
   let currentStep = 0;
+
+  // Hash-based navigation: GHL redirects to #power-prompts after form submit
+  // which navigates the top frame here and we detect it on load
+  (function() {
+    if (window.location.hash === '#power-prompts') {
+      // Clear the hash cleanly without a page jump
+      history.replaceState(null, '', window.location.pathname);
+      // Mark capture as done so modal never shows again this session
+      window.__skipCapture = true;
+      // Wait for DOM then navigate to step 4
+      document.addEventListener('DOMContentLoaded', function() {
+        captureCompleted = true;
+        goTo(4);
+      });
+    }
+  })();
 
   const stepLabels = [
     'Getting Started',
