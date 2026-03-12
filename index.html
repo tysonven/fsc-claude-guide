@@ -1381,26 +1381,38 @@ Key things to know:
         <p style="font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.5;margin:0;">20 ready-to-use Claude prompts for health &amp; wellness founders — beautifully formatted to keep on your desk or share with your team.</p>
       </div>
 
-      <!-- GHL form -->
-      <div style="padding:8px 28px 24px;">
-        <iframe
-          src="https://api.leadconnectorhq.com/widget/form/ApZkertsMOqlJlpPE5CA"
-          style="display:block;width:100%;min-height:280px;border:none;border-radius:3px;"
-          id="inline-ApZkertsMOqlJlpPE5CA"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-form-name="Claude Lead Magnet"
-          data-height="undefined"
-          data-layout-iframe-id="inline-ApZkertsMOqlJlpPE5CA"
-          data-form-id="ApZkertsMOqlJlpPE5CA"
-          title="Claude Lead Magnet"
-        ></iframe>
-        <div style="text-align:center;margin-top:6px;padding:0 4px;">
-          <button onclick="skipCapture()" style="background:none;border:none;font-family:'Raleway',sans-serif;font-size:0.82rem;color:var(--text-muted);cursor:pointer;padding:6px;text-decoration:underline;">No thanks, skip this</button>
+      <!-- Native webhook form -->
+      <div style="padding:16px 28px 24px;">
+
+        <!-- Form state -->
+        <div id="captureForm">
+          <div style="margin-bottom:14px;">
+            <label style="display:block;font-family:'Raleway',sans-serif;font-size:0.82rem;font-weight:600;color:var(--navy);margin-bottom:6px;">Full Name *</label>
+            <input id="captureName" type="text" placeholder="Your name" autocomplete="name"
+              style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:0.92rem;color:var(--navy);background:#fff;box-sizing:border-box;outline:none;transition:border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--amber)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <div style="margin-bottom:18px;">
+            <label style="display:block;font-family:'Raleway',sans-serif;font-size:0.82rem;font-weight:600;color:var(--navy);margin-bottom:6px;">Email *</label>
+            <input id="captureEmail" type="email" placeholder="you@example.com" autocomplete="email"
+              style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'Raleway',sans-serif;font-size:0.92rem;color:var(--navy);background:#fff;box-sizing:border-box;outline:none;transition:border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--amber)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <div id="captureError" style="display:none;color:#c0392b;font-family:'Raleway',sans-serif;font-size:0.8rem;margin-bottom:10px;"></div>
+          <button id="captureSubmitBtn" onclick="submitCapture()" class="btn-primary" style="width:100%;justify-content:center;">Send me the PDF →</button>
+          <div style="text-align:center;margin-top:10px;">
+            <button onclick="skipCapture()" style="background:none;border:none;font-family:'Raleway',sans-serif;font-size:0.82rem;color:var(--text-muted);cursor:pointer;padding:4px;text-decoration:underline;">No thanks, skip this</button>
+          </div>
         </div>
+
+        <!-- Success state -->
+        <div id="captureSuccess" style="display:none;text-align:center;padding:16px 0 8px;">
+          <div style="font-size:2rem;margin-bottom:10px;">🎉</div>
+          <div style="font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:6px;">You're in! Check your inbox.</div>
+          <p style="font-family:'Raleway',sans-serif;font-size:0.85rem;color:var(--text-muted);line-height:1.5;margin:0 0 18px;">The Prompt Toolkit PDF is on its way. Taking you to the prompts now…</p>
+          <div style="width:40px;height:3px;background:var(--amber);border-radius:2px;margin:0 auto;animation:pulse 1s ease infinite;"></div>
+        </div>
+
       </div>
 
     </div>
@@ -1413,8 +1425,10 @@ Key things to know:
     let captureCompleted = false;
 
   // ── MODAL ───────────────────────────────────────────────────────────────────────────
+  var WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/nOkx7DPm0kNgNMzNFRY5/webhook-trigger/97b89f6d-ac4f-4174-99ca-645582c07ef6';
+
   function showCapture() {
-    if (captureCompleted || window.__skipCapture) { goTo(4); return; }
+    if (captureCompleted) { goTo(4); return; }
     document.getElementById('captureOverlay').style.display = 'flex';
   }
 
@@ -1424,11 +1438,52 @@ Key things to know:
     goTo(4);
   }
 
-  // Listen for GHL form submission and auto-close modal
   function proceedAfterCapture() {
     captureCompleted = true;
     document.getElementById('captureOverlay').style.display = 'none';
     goTo(4);
+  }
+
+  function submitCapture() {
+    var name = document.getElementById('captureName').value.trim();
+    var email = document.getElementById('captureEmail').value.trim();
+    var errEl = document.getElementById('captureError');
+    var btn = document.getElementById('captureSubmitBtn');
+
+    // Basic validation
+    if (!name) { showErr('Please enter your name.'); return; }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showErr('Please enter a valid email address.'); return; }
+    errEl.style.display = 'none';
+
+    // Loading state
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    // POST to GHL webhook
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ firstName: name.split(' ')[0], lastName: name.split(' ').slice(1).join(' ') || '', name: name, email: email, source: 'claude-onboarding-guide' })
+    })
+    .then(function() { onCaptureSuccess(); })
+    .catch(function() { onCaptureSuccess(); }); // proceed even if webhook errors — don't block user
+  }
+
+  function showErr(msg) {
+    var errEl = document.getElementById('captureError');
+    errEl.textContent = msg;
+    errEl.style.display = 'block';
+  }
+
+  function onCaptureSuccess() {
+    // Fire GTM conversion event
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'conversion - claude lead magnet' });
+    // Swap to success state
+    document.getElementById('captureForm').style.display = 'none';
+    document.getElementById('captureSuccess').style.display = 'block';
+    // Auto-advance after 2.5s
+    setTimeout(proceedAfterCapture, 2500);
   }
 
 
@@ -1464,21 +1519,7 @@ Key things to know:
   const totalSteps = 7;
   let currentStep = 0;
 
-  // Hash-based navigation: GHL redirects to #power-prompts after form submit
-  // which navigates the top frame here and we detect it on load
-  (function() {
-    if (window.location.hash === '#power-prompts') {
-      // Clear the hash cleanly without a page jump
-      history.replaceState(null, '', window.location.pathname);
-      // Mark capture as done so modal never shows again this session
-      window.__skipCapture = true;
-      // Wait for DOM then navigate to step 4
-      document.addEventListener('DOMContentLoaded', function() {
-        captureCompleted = true;
-        goTo(4);
-      });
-    }
-  })();
+
 
   const stepLabels = [
     'Getting Started',
@@ -1537,6 +1578,6 @@ Key things to know:
   updateProgress();
 </script>
 
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
 </body>
 </html>
